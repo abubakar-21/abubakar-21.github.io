@@ -1,0 +1,305 @@
+body{
+    margin: 0px;
+}
+
+.item1 { grid-area: profile; box-shadow: 0px 4px 8px rgba(0,0,0,.1); position: relative; background-image: url(../Images/background.jpg); background-repeat: repeat-x; background-size: cover; height: 100%;}
+.item2 { grid-area: sidebar; background-color: #f7f9fa; box-shadow: 2px 2px 8px rgb(247, 249, 250);}
+.item3 { grid-area: posts; box-shadow: 0px 8px 10px rgba(44, 130, 201, .5); border-radius: 8px;}
+.item4 { grid-area: likes; box-shadow: 0px 5px 10px rgba(0,0,0,.1)}
+.item5 { grid-area: content; }
+
+.grid-container {
+    display: grid;
+    grid:
+    'profile profile profile'
+    'sidebar posts  likes'
+    'sidebar content content ';
+    grid-template-columns: 25% auto auto;
+    grid-template-rows: 0.15fr 0.01fr 0.01fr;
+    grid-gap: 1px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+  }
+
+  .posts{
+      
+      margin-top: 0px;
+      margin-bottom: 2px;
+      padding-top: 2px;
+      text-align: center;
+      font-family: cursive;
+      font-size: 21px;
+      
+  }
+
+  .likes{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 4px;
+      text-align: center;
+      font-family: cursive;
+      font-size: 21px;
+}
+
+
+.profile-picture{
+    float: left;
+    width: 350px;
+    height: 200px;
+}
+
+.profile-picture img{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+
+/*Main content - Posts */
+
+
+
+.content-container{
+    /* grid-column-start: 1 / 3; */
+    /* grid-row-start: 1 / 2; */
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: grid;
+    /* grid-template-areas:
+    "pict1 pict2 pict3 pict4"
+    "pict5 pict6 pict7 pict8"
+    "pict9 pict10"; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 24px 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+.image img{
+    height: 100%;
+    width: 95%;
+    margin-left: 8px;
+    /* margin-right: 2px; */
+    border-radius: 3px;
+}
+
+/* .pic1{ grid-area: pict1;}
+.pic2{ grid-area: pict2;}
+.pic3{ grid-area: pict3;}
+.pic4{ grid-area: pict4;}
+.pic5{ grid-area: pict5;}
+.pic6{ grid-area: pict6;}
+.pic7{ grid-area: pict7;}
+.pic8{ grid-area: pict8;}
+.pic9{ grid-area: pict9;}
+.pic10{ grid-area: pict10;} */
+
+.list{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    
+}
+li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.username{
+    margin-top: 50px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.bio-address{
+    margin-top: 50px;
+    padding-left: 25px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.bio{
+    padding-left: 25px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    
+    
+}
+
+.footer{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(103, 128, 159, 1);
+    color: rgba(238, 238, 238, 1);
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+
+/* Ipads */
+@media only screen and (max-width:1500px){
+
+    .list, .username{
+        font-size: 20px;
+    }
+
+      .grid-container {
+        grid-template-areas:
+        "profile profile profile profile"
+        "sidebar sidebar sidebar sidebar"
+        "posts posts likes likes"
+        "content content content content"
+        "content content content content";
+        grid-template-rows: 0.8fr 0.8fr 0.01fr;
+        
+        
+      }
+
+      .posts, .likes{
+
+        margin-top: 10px;
+        padding-bottom: 8px;
+        font-size: 21px;
+        
+    }
+
+    .profile-picture img{
+        height: 200px;
+        width: 200px;
+        top: 40px;
+        /* left: 60px; */
+    }
+
+  
+
+}
+
+
+
+/* Mobile - Screens with less than 600 width*/
+
+@media only screen and (max-width:600px){
+
+    .grid-container {
+        
+        grid-template-rows: 0.5fr 0.5fr 0.01fr;
+        
+        
+      }
+    
+
+
+    .profile-picture img{
+        height: 120px;
+        width: 120px;
+        top: 50px;
+        left: 20px;
+    }
+
+    .list{
+        
+        padding-left: 10px;
+        
+        
+    }
+
+    .username{
+        
+        padding-left: 20px;
+        
+    }
+    
+    .bio-address, .bio{
+        
+        padding-left: 15px;
+        
+        
+    }
+
+}
+/* Screens that has less than 455 width */
+@media only screen and (max-width:455px){
+
+    .footer, .list{
+        font-size: 14px;
+    }
+
+    .bio-address, .bio{
+        
+        font-size: 13px;
+        
+    }
+
+    .grid-container {
+        
+        /* grid-template-areas:
+        "profile profile"
+        "sidebar sidebar"
+        "posts likes"
+        "content content"
+        "content content"
+        "content content"; */
+        grid-template-columns: auto auto;
+         
+      }
+
+        .pic1{ grid-area: pict1;}
+        .pic2{ grid-area: pict2;}
+        .pic3{ grid-area: pict3;}
+        .pic4{ grid-area: pict4;}
+        .pic5{ grid-area: pict5;}
+        .pic6{ grid-area: pict6;}
+        .pic7{ grid-area: pict7;}
+        .pic8{ grid-area: pict8;}
+        .pic9{ grid-area: pict9;}
+        .pic10{ grid-area: pict10;}
+        .pic11{ grid-area: pict11;}
+        .pic12{ grid-area: pict12;}
+        .pic13{ grid-area: pict13;}
+        .pic14{ grid-area: pict14;}
+        .pic15{ grid-area: pict15;}
+        .pic16{ grid-area: pict16;}
+        .pic17{ grid-area: pict17;}
+        .pic18{ grid-area: pict18;}
+        .pic19{ grid-area: pict19;}
+        .pic20{ grid-area: pict20;}
+        .pic21{ grid-area: pict21;}
+
+      .content-container{
+        grid-template-areas:
+        "pict1 pict2"
+        "pict3 pict4"
+        "pict5 pict6"
+        "pict7 pict8"
+        "pict9 pict10"
+        "pict11 pict12"
+        "pict13 pict14"
+        "pict15 pict16"
+        "pict17 pict18"
+        "pict19 pict20"
+        "pict21 pict22";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        
+    }
+
+    .image img{
+        height: 100%;
+        width: 95%;
+        margin-left: 5px;
+        /* margin-right: 2px; */
+    }
+    
+}
