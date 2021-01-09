@@ -199,8 +199,10 @@ li{
         
         
       }
-    
 
+      .list, .likes, .posts{
+        font-family: Arial, Verdana;
+    }
 
     .profile-picture img{
         height: 120px;
@@ -241,6 +243,10 @@ li{
         
         font-size: 13px;
         
+    }
+
+    .list, .likes, .posts{
+        font-family: Arial, Verdana;
     }
 
     .grid-container {
