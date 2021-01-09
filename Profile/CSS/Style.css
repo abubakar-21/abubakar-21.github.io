@@ -200,7 +200,7 @@ li{
         
       }
 
-      .list, .likes, .posts{
+      li, .likes, .posts{
         font-family: Arial, Verdana;
     }
 
