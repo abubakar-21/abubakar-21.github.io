@@ -2,7 +2,15 @@ body{
     margin: 0px;
 }
 
-.item1 { grid-area: profile; box-shadow: 0px 4px 8px rgba(0,0,0,.1); position: relative; background-image: url(../Images/background.jpg); background-repeat: repeat-x; background-size: cover; height: 100%;}
+.item1 { 
+    grid-area: profile; 
+    box-shadow: 0px 4px 8px rgba(0,0,0,.1); 
+    position: relative; 
+    background-image: url(../Images/background.jpg); 
+    background-repeat: repeat-x; 
+    background-size: cover; 
+    height: 100%;
+}
 .item2 { grid-area: sidebar; background-color: #f7f9fa; box-shadow: 2px 2px 8px rgb(247, 249, 250);}
 .item3 { grid-area: posts; box-shadow: 0px 8px 10px rgba(44, 130, 201, .5); border-radius: 8px;}
 .item4 { grid-area: likes; box-shadow: 0px 5px 10px rgba(0,0,0,.1)}
@@ -60,21 +68,12 @@ body{
     top: 35px;
 }
 
-
 /*Main content - Posts */
 
-
-
 .content-container{
-    /* grid-column-start: 1 / 3; */
-    /* grid-row-start: 1 / 2; */
     margin-top: 50px;
     margin-bottom: 0;
     display: grid;
-    /* grid-template-areas:
-    "pict1 pict2 pict3 pict4"
-    "pict5 pict6 pict7 pict8"
-    "pict9 pict10"; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 24px 10px;
@@ -88,20 +87,8 @@ body{
     height: 100%;
     width: 95%;
     margin-left: 8px;
-    /* margin-right: 2px; */
     border-radius: 3px;
 }
-
-/* .pic1{ grid-area: pict1;}
-.pic2{ grid-area: pict2;}
-.pic3{ grid-area: pict3;}
-.pic4{ grid-area: pict4;}
-.pic5{ grid-area: pict5;}
-.pic6{ grid-area: pict6;}
-.pic7{ grid-area: pict7;}
-.pic8{ grid-area: pict8;}
-.pic9{ grid-area: pict9;}
-.pic10{ grid-area: pict10;} */
 
 .list{
     list-style-type: none;
@@ -118,6 +105,7 @@ li{
     font-weight: bold;
 }
 .username{
+    
     margin-top: 50px;
     padding-left: 30px;
     font-size: 20px;
@@ -125,6 +113,7 @@ li{
 }
 
 .bio-address{
+    
     margin-top: 50px;
     padding-left: 25px;
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -132,6 +121,7 @@ li{
 }
 
 .bio{
+
     padding-left: 25px;
     font-family: Georgia, Times, 'Times New Roman', serif;
     
@@ -139,6 +129,7 @@ li{
 }
 
 .footer{
+
     height: 40px;
     width: 100%;
     background-color: rgba(103, 128, 159, 1);
@@ -157,6 +148,7 @@ li{
     }
 
       .grid-container {
+
         grid-template-areas:
         "profile profile profile profile"
         "sidebar sidebar sidebar sidebar"
@@ -177,6 +169,7 @@ li{
     }
 
     .profile-picture img{
+
         height: 180px;
         width: 180px;
         top: 25px;
@@ -201,10 +194,12 @@ li{
       }
 
       li, .likes, .posts{
+
         font-family: Arial, Verdana;
     }
 
     .profile-picture img{
+
         height: 120px;
         width: 120px;
         top: 50px;
@@ -228,7 +223,6 @@ li{
         
         padding-left: 15px;
         
-        
     }
 
 }
@@ -236,6 +230,7 @@ li{
 @media only screen and (max-width:455px){
 
     .footer, .list{
+
         font-size: 14px;
     }
 
@@ -246,18 +241,12 @@ li{
     }
 
     .li, .likes, .posts{
+
         font-family: Arial, Verdana;
     }
 
     .grid-container {
-        
-        /* grid-template-areas:
-        "profile profile"
-        "sidebar sidebar"
-        "posts likes"
-        "content content"
-        "content content"
-        "content content"; */
+
         grid-template-columns: auto auto;
          
       }
@@ -306,7 +295,7 @@ li{
         height: 100%;
         width: 95%;
         margin-left: 5px;
-        /* margin-right: 2px; */
+
     }
     
 }
