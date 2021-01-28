@@ -37,3 +37,15 @@ p{
     margin-left: 20px;
     
 }
+
+@media only screen and (max-width:500px){
+
+    .container{
+        margin-top: 200px;
+        width: 310px;
+        height: 700px;
+       
+        
+    }
+    
+}
