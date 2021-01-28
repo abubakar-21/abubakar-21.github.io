@@ -1,0 +1,31 @@
+body{
+    background-color: #fafafa;
+}
+h2{
+    color: #fafafa;
+}
+
+.profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+}
+
+.log_out{
+    margin-left: 15px;
+}
+
+nav{
+    height: 50px;
+}
+
+.user{
+    color: #fafafa;
+    font-size: small;
+    text-align: right;
+}

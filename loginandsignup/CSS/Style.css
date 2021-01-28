@@ -27,6 +27,7 @@ body{
     grid-gap: 1px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+    margin-top: 0;
 
   }
 
@@ -55,6 +56,24 @@ body{
     float: left;
     width: 350px;
     height: 200px;
+}
+
+.profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.log_out{
+    margin-left: 15px;
+}
+
+.home{
+    color: #fafafa;
+}
+
+nav{
+    height: 50px;
 }
 
 .profile-picture img{
@@ -130,13 +149,13 @@ li{
 
 .footer{
 
-    height: 40px;
+    height: 50px;
     width: 100%;
     background-color: rgba(103, 128, 159, 1);
     color: rgba(238, 238, 238, 1);
     text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
   }
   
 

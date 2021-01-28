@@ -1,0 +1,45 @@
+body{
+    background-color: #fafafa;
+}
+.container{
+    margin-top: 200px;
+    width: 350px;
+    height: 550px;
+    background-color: rgb(248,248,248);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.1);
+    
+}
+
+form{
+    padding-top: 50px;
+}
+
+h4{
+    text-align: center;
+    padding-top: 20px;
+}
+p{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.signup{
+    margin-left: 20px;
+    
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+    width: 200px;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+    width: 200px;
+}
+
+.btn-twitter{
+    margin-top: 30px;
+}
