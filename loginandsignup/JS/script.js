@@ -1,5 +1,5 @@
 let display = document.getElementById("display");
-display.readOnly = true;
+//display.readOnly = true;
 let keys = document.getElementsByClassName("key");
 let result;
 let operation = new Array;
