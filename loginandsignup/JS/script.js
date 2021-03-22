@@ -7,7 +7,6 @@ let value = new Array;
 let totResult = 0;
 let checkEqual, printCalc = false;
 const maxDigits = 21;
-let clearBtn = document.getElementById("clear");
 
 // Clearing the display
 function clear() {
